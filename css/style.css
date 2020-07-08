@@ -1,5 +1,5 @@
 
-/* 1. Theme default css */
+/************** Theme default css *************/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
  body {
 	font-family: 'Open Sans', sans-serif;
@@ -96,7 +96,13 @@ p {
 	font-size: 14px;
 	opacity: 1;
 }
-
+/*********Theme default css End***********/
+/*********Top Section Start***********/
+.navbar-nav a{
+	font-size: 13px;
+	font-weight: 500;
+	color:black !important;
+}
 .container{
 	margin-bottom: 20px;
 }
@@ -131,7 +137,8 @@ p {
 	white-space: nowrap;
 
 }
-
+/*********Top Section End***********/
+/*********Info Section Start***********/
 .cat1,.cat3, .cat4{
 	border: none;
 	border-radius: 10px;
@@ -152,54 +159,181 @@ p {
 .info h5{		
 	padding-top: 15px;
 	}
-
-.section-courses{
+/*********Info Section End***********/
+/*********Courses Section Start***********/
+#courses{
 	margin-top: 40px;
+	padding-bottom: 20px;
 	}
-.section-courses h3{
+#courses h3{
 	text-align: center;
 	padding: 30px;
 	}
-.card{
+#courses .card{
 	border: none;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px lightgray;
 	}
-.card-footer{
+#courses .card-footer{
 	border-top: none;				
 	background-color: white;
 	}
-.card img{
+#courses .card img{
 	padding: 10px;
 	} 
-.card-footer img{
+#courses .card-footer img{
 	padding: 0px;
 	} 
+/*********Courses Section End***********/
 
-.section-testimonial {
+/*********Team Section Start***********/
+
+#team {
+	padding-top: 40px;
+    background: #eee !important; 
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+}
+
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/*********Team Section End***********/
+
+/*********Testimonial Section Start***********/
+#testimonial {
 	padding: 40px;
 	}
 
-.section-testimonial p{
+#testimonial p{
 	padding: 20px;
 	}
+/*********Testimonial Section End***********/
 
-.section-bottom{
+/*********section-bottom  Start***********/
+#section-bottom{
 	background-color: black;
 	padding: 50px;
 	}
 
-.section-bottom h5{
+#section-bottom h5{
 	font-size: 14px;
 	color: white;
 	font-weight: 400;				
 	}
-.section-bottom li a{
+#section-bottom li a{
+	text-decoration: none;
 	font-weight: normal;
 	line-height: 24px;
 	color: #7e7e7e;
 	}
-			
+/*********section-bottom  End***********/
 footer{
 	text-align: center;
 	background-color: black;
@@ -207,5 +341,4 @@ footer{
 	padding: 10px 10px 30px;
 	}
 
-
-
+	
